@@ -1,0 +1,27 @@
+Program.Sub.ScreenSU.Start
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Coded by: JLH
+'Project Start Date: 7/29/2011
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,"25910")
+	V.Passed.000204.Set("BOL Container")
+F.Intrinsic.Control.elseif(V.Caller.Hook,=,"25980")
+	F.Global.General.CallWrapperAsync(50,"SHP315")
+F.Intrinsic.Control.EndIf
+
+Program.Sub.Main.End
+
+Program.Sub.Comments.Start
+${$0$}$ATG_3775_BOL_Container_Call$}$JCT$}$4/11/2016
+${$1$}$$}$$}$1$}$25980$}$OES099-SCRIPT-1$}$4/11/2016 2:53:41 PM$}$(Program: ORD099GI; Screen: OES099)
+
+${$1$}$$}$$}$0$}$25910$}$OES099 Populate Hook$}$4/11/2016 2:53:21 PM$}$(Program: ORD099GI ; Screen: OES099)
+
+Program.Sub.Comments.End
+
